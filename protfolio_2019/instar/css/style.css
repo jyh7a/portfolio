@@ -1,0 +1,110 @@
+﻿@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #ddd;
+
+}
+
+.filter {
+  padding: 10px;
+  margin-bottom: 50px
+}
+
+.filter::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.filter>li {
+  float: left;
+  margin-right: 20px;
+}
+
+.filter>li>a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #555;
+  font: bold 14px/40px 'arial';
+  color: #fff;
+  text-align: center;
+}
+
+.listBox {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 100%;
+}
+
+.list>li {
+  width: 20%;
+  padding: 10px;
+  /* border: 1px solid seagreen; */
+  float: left;
+}
+
+.list>li>div {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list>li>div>a>img {
+  width: 100%;
+}
+
+.list>li>div>p {
+  font: bold 14px/1 'arial';
+  color: #888;
+}
+
+/*  반응형 */
+@media screen and (max-width:1399px) {
+  .list>li {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:999px) {
+  .list>li {
+    width: 33.333%;
+  }
+}
+
+@media screen and (max-width:749px) {
+  .list>li {
+    width: 50%;
+  }
+}
+
+/* 540 미만이 landScape */
+@media screen and (max-width:539px) {
+  .list>li {
+    width: 100%;
+  }
+}
