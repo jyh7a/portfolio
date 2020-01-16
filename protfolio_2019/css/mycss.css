@@ -333,3 +333,7 @@ a.color-purple, a.color-purple:focus, a.color-purple:hover {
 a:focus.color-purple2, a:hover.color-purple2{
   color: #ad37e4;
 }
+
+.text-line-through{
+  text-decoration:line-through
+}
