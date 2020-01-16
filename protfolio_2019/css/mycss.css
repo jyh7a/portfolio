@@ -1,3 +1,10 @@
+a{
+  color:inherit;
+}
+
+
+
+
 .logo {
   /* display: none; */
   animation: logoAni 2s linear infinite;
@@ -314,4 +321,15 @@ a.color-purple, a.color-purple:focus, a.color-purple:hover {
   text-decoration: none;
   outline: 0;
   color: #a387ff;
+}
+
+.color-purple2{
+  color: #ad37e4;
+  font-weight: bold;
+}
+
+
+
+a:focus.color-purple2, a:hover.color-purple2{
+  color: #ad37e4;
 }
